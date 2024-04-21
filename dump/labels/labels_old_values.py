@@ -124,7 +124,7 @@ def make_old_values():
     # ---
     try:
         with codecs.open(file_old_data, 'w', 'utf-8') as f:
-            json.dump(Old, f, indent=2)
+            json.dump(Old, f, indent=4)
     except IOError as e:
         print(f"Error writing to {file_old_data}: {e}")
     # ---
